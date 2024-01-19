@@ -11,8 +11,8 @@
 #include <stdio.h>
 #include <iostream>
 
-using KeyType = std::string;
-using ValueType = double;
+using KeyType = int;
+using ValueType = std::string;
 
 const int DEFAULT_MAX_ITEMS = 150;
 
@@ -20,7 +20,8 @@ class Map
 {
     public:
         Map(int size = DEFAULT_MAX_ITEMS);
-        ~Map();
+        Map(const Map& ref);
+	~Map();
         Map& operator=(const Map& rhs);
         bool empty() const;
         int size() const;

@@ -4,9 +4,12 @@
 //
 //  Created by Leison Gao on 1/19/24.
 //
-#include "newMap.h"
+#include "Map.h"
 #include <stdio.h>
 #include <cassert>
+#include <iostream>
+
+using namespace std;
 
 int main() {
     Map a(1000);   // a can hold at most 1000 key/value pairs
@@ -26,4 +29,5 @@ int main() {
     // as well:
     a.swap(b);
     assert(!a.insert(k[5], v)  &&  b.insert(k[5], v));
+    cout << "passed all tests" << endl;
 }

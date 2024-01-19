@@ -6,9 +6,10 @@
 //
 
 #include "Map.h"
+#include <iostream>
 
-using KeyType = std::string;
-using ValueType = double;
+using KeyType = int;
+using ValueType = std::string;
 
 using namespace std;
 

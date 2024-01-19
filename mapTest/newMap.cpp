@@ -7,8 +7,8 @@
 
 #include "newMap.h"
 
-using KeyType = std::string;
-using ValueType = double;
+using KeyType = int;
+using ValueType = std::string;
 
 using namespace std;
 
@@ -18,6 +18,12 @@ Map::Map(int size) {
     m_entries = new Entry[m_max_size + 1];
 }
 
+Map::Map(const Map& ref) {
+    m_size = ref.m_size;
+    m_max_size = ref.m_max_size;
+    m_entries = new Entry[m_max_size + 1];
+    m_entries = ref.m_entries;
+}
 Map::~Map() {
     delete [] m_entries;
 }

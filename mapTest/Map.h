@@ -11,8 +11,8 @@
 #include <stdio.h>
 #include <iostream>
 
-using KeyType = std::string;
-using ValueType = double;
+using KeyType = int;
+using ValueType = std::string;
 
 const int DEFAULT_MAX_ITEMS = 150;
 
