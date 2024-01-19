@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D72612482B5A0AF600579D63 /* testGamerMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D72612472B5A0AF600579D63 /* testGamerMap.cpp */; };
-		D77C57DF2B5A0243006194C0 /* GamerMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D77C57DD2B5A0243006194C0 /* GamerMap.cpp */; };
+		D79641172B5B0057004BDE58 /* testMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D79641162B5B0057004BDE58 /* testMap.cpp */; };
+		D79641192B5B00F0004BDE58 /* testnewMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D79641182B5B00F0004BDE58 /* testnewMap.cpp */; };
+		D796411A2B5B018F004BDE58 /* newMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D72612492B5A0B8900579D63 /* newMap.cpp */; };
+		D796411B2B5B018F004BDE58 /* testGamerMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D72612472B5A0AF600579D63 /* testGamerMap.cpp */; };
+		D796411C2B5B018F004BDE58 /* GamerMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D77C57DD2B5A0243006194C0 /* GamerMap.cpp */; };
 		D7DDB1622B59E0A00081F902 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7DDB1612B59E0A00081F902 /* main.cpp */; };
 		D7DDB16A2B59E10D0081F902 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7DDB1682B59E10D0081F902 /* Map.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D79641092B5AFDA2004BDE58 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		D7DDB15C2B59E0A00081F902 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -27,8 +39,13 @@
 
 /* Begin PBXFileReference section */
 		D72612472B5A0AF600579D63 /* testGamerMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testGamerMap.cpp; sourceTree = "<group>"; };
+		D72612492B5A0B8900579D63 /* newMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = newMap.cpp; sourceTree = "<group>"; };
+		D726124A2B5A0B8900579D63 /* newMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = newMap.h; sourceTree = "<group>"; };
 		D77C57DD2B5A0243006194C0 /* GamerMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GamerMap.cpp; sourceTree = "<group>"; };
 		D77C57DE2B5A0243006194C0 /* GamerMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamerMap.h; sourceTree = "<group>"; };
+		D796410B2B5AFDA2004BDE58 /* newMapTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = newMapTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79641162B5B0057004BDE58 /* testMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testMap.cpp; sourceTree = "<group>"; };
+		D79641182B5B00F0004BDE58 /* testnewMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testnewMap.cpp; sourceTree = "<group>"; };
 		D7DDB15E2B59E0A00081F902 /* homework_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = homework_1; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DDB1612B59E0A00081F902 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D7DDB1682B59E10D0081F902 /* Map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
@@ -36,6 +53,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D79641082B5AFDA2004BDE58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7DDB15B2B59E0A00081F902 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,7 +73,7 @@
 		D7DDB1552B59E0A00081F902 = {
 			isa = PBXGroup;
 			children = (
-				D7DDB1602B59E0A00081F902 /* homework_1 */,
+				D7DDB1602B59E0A00081F902 /* mapTest */,
 				D7DDB15F2B59E0A00081F902 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,26 +82,48 @@
 			isa = PBXGroup;
 			children = (
 				D7DDB15E2B59E0A00081F902 /* homework_1 */,
+				D796410B2B5AFDA2004BDE58 /* newMapTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D7DDB1602B59E0A00081F902 /* homework_1 */ = {
+		D7DDB1602B59E0A00081F902 /* mapTest */ = {
 			isa = PBXGroup;
 			children = (
 				D7DDB1612B59E0A00081F902 /* main.cpp */,
 				D7DDB1682B59E10D0081F902 /* Map.cpp */,
+				D7DDB1692B59E10D0081F902 /* Map.h */,
+				D79641162B5B0057004BDE58 /* testMap.cpp */,
+				D72612472B5A0AF600579D63 /* testGamerMap.cpp */,
 				D77C57DD2B5A0243006194C0 /* GamerMap.cpp */,
 				D77C57DE2B5A0243006194C0 /* GamerMap.h */,
-				D7DDB1692B59E10D0081F902 /* Map.h */,
-				D72612472B5A0AF600579D63 /* testGamerMap.cpp */,
+				D79641182B5B00F0004BDE58 /* testnewMap.cpp */,
+				D72612492B5A0B8900579D63 /* newMap.cpp */,
+				D726124A2B5A0B8900579D63 /* newMap.h */,
 			);
-			path = homework_1;
+			path = mapTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D796410A2B5AFDA2004BDE58 /* newMapTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D79641112B5AFDA2004BDE58 /* Build configuration list for PBXNativeTarget "newMapTest" */;
+			buildPhases = (
+				D79641072B5AFDA2004BDE58 /* Sources */,
+				D79641082B5AFDA2004BDE58 /* Frameworks */,
+				D79641092B5AFDA2004BDE58 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = newMapTest;
+			productName = newMapTest;
+			productReference = D796410B2B5AFDA2004BDE58 /* newMapTest */;
+			productType = "com.apple.product-type.tool";
+		};
 		D7DDB15D2B59E0A00081F902 /* homework_1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7DDB1652B59E0A00081F902 /* Build configuration list for PBXNativeTarget "homework_1" */;
@@ -104,6 +150,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					D796410A2B5AFDA2004BDE58 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 					D7DDB15D2B59E0A00081F902 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -123,25 +172,52 @@
 			projectRoot = "";
 			targets = (
 				D7DDB15D2B59E0A00081F902 /* homework_1 */,
+				D796410A2B5AFDA2004BDE58 /* newMapTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D79641072B5AFDA2004BDE58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7DDB15A2B59E0A00081F902 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D796411A2B5B018F004BDE58 /* newMap.cpp in Sources */,
+				D79641172B5B0057004BDE58 /* testMap.cpp in Sources */,
 				D7DDB16A2B59E10D0081F902 /* Map.cpp in Sources */,
-				D77C57DF2B5A0243006194C0 /* GamerMap.cpp in Sources */,
+				D796411B2B5B018F004BDE58 /* testGamerMap.cpp in Sources */,
 				D7DDB1622B59E0A00081F902 /* main.cpp in Sources */,
-				D72612482B5A0AF600579D63 /* testGamerMap.cpp in Sources */,
+				D79641192B5B00F0004BDE58 /* testnewMap.cpp in Sources */,
+				D796411C2B5B018F004BDE58 /* GamerMap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D796410F2B5AFDA2004BDE58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D79641102B5AFDA2004BDE58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D7DDB1632B59E0A00081F902 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,6 +352,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D79641112B5AFDA2004BDE58 /* Build configuration list for PBXNativeTarget "newMapTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D796410F2B5AFDA2004BDE58 /* Debug */,
+				D79641102B5AFDA2004BDE58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D7DDB1592B59E0A00081F902 /* Build configuration list for PBXProject "homework_1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

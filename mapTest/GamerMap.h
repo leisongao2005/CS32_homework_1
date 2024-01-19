@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 #include <iostream>
-#include "Map.h"
+#include "newMap.h"
 
 using KeyType = std::string;
 using ValueType = double;

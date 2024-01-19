@@ -21,4 +21,5 @@ int main()
     cout << a.hoursSpent("Richie") << endl;;
     cout << a.hoursSpent("Max") << endl;;
     a.print();
+    return 0;
 }
