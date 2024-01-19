@@ -1,14 +1,27 @@
-//
-//  main.cpp
-//  homework_1
-//
-//  Created by Leison Gao on 1/18/24.
-//
-
 #include <iostream>
+#include <cassert>
+#include "map.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+
+int main() {
+    Map mm;
+    mm.insert("Little Ricky", 3.206);
+    mm.insert("Ethel", 3.538);
+    mm.insert("Ricky", 3.350);
+    mm.insert("Lucy", 2.956);
+    mm.insert("Ethel", 3.538);
+    mm.insert("Fred", 2.956);
+    mm.insert("Lucy", 2.956);
+//    mm.visualize();
+    assert(mm.size() == 5);  // duplicate "Ethel" and "Lucy" were not added
+    string x;
+    double y;
+    mm.get(0, x, y);
+    assert(x == "Ethel");  // "Ethel" is greater than exactly 0 items in mm
+    mm.get(4, x, y);
+    assert(x == "Ricky");  // "Ricky" is greater than exactly 4 items in mm
+    mm.get(2, x, y);
+    assert(x == "Little Ricky");  // "Little Ricky" is greater than exactly 2 items in mm
+    assert(y == 3.206);   // the value corresponding to the key "Little Ricky"
 }
