@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D72612482B5A0AF600579D63 /* testGamerMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D72612472B5A0AF600579D63 /* testGamerMap.cpp */; };
+		D77C57DF2B5A0243006194C0 /* GamerMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D77C57DD2B5A0243006194C0 /* GamerMap.cpp */; };
 		D7DDB1622B59E0A00081F902 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7DDB1612B59E0A00081F902 /* main.cpp */; };
-		D7DDB16A2B59E10D0081F902 /* map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7DDB1682B59E10D0081F902 /* map.cpp */; };
+		D7DDB16A2B59E10D0081F902 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7DDB1682B59E10D0081F902 /* Map.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +26,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D72612472B5A0AF600579D63 /* testGamerMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testGamerMap.cpp; sourceTree = "<group>"; };
+		D77C57DD2B5A0243006194C0 /* GamerMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GamerMap.cpp; sourceTree = "<group>"; };
+		D77C57DE2B5A0243006194C0 /* GamerMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamerMap.h; sourceTree = "<group>"; };
 		D7DDB15E2B59E0A00081F902 /* homework_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = homework_1; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DDB1612B59E0A00081F902 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		D7DDB1682B59E10D0081F902 /* map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = map.cpp; sourceTree = "<group>"; };
-		D7DDB1692B59E10D0081F902 /* map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = map.h; sourceTree = "<group>"; };
+		D7DDB1682B59E10D0081F902 /* Map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
+		D7DDB1692B59E10D0081F902 /* Map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +66,11 @@
 			isa = PBXGroup;
 			children = (
 				D7DDB1612B59E0A00081F902 /* main.cpp */,
-				D7DDB1682B59E10D0081F902 /* map.cpp */,
-				D7DDB1692B59E10D0081F902 /* map.h */,
+				D7DDB1682B59E10D0081F902 /* Map.cpp */,
+				D77C57DD2B5A0243006194C0 /* GamerMap.cpp */,
+				D77C57DE2B5A0243006194C0 /* GamerMap.h */,
+				D7DDB1692B59E10D0081F902 /* Map.h */,
+				D72612472B5A0AF600579D63 /* testGamerMap.cpp */,
 			);
 			path = homework_1;
 			sourceTree = "<group>";
@@ -124,8 +132,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7DDB16A2B59E10D0081F902 /* map.cpp in Sources */,
+				D7DDB16A2B59E10D0081F902 /* Map.cpp in Sources */,
+				D77C57DF2B5A0243006194C0 /* GamerMap.cpp in Sources */,
 				D7DDB1622B59E0A00081F902 /* main.cpp in Sources */,
+				D72612482B5A0AF600579D63 /* testGamerMap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
